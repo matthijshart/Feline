@@ -5,54 +5,654 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bijlage Scriptie - Feline Lambers</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             margin: 0;
+            padding: 2rem 1rem;
             background-color: #f5f5f5;
             color: #333;
         }
         .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        header {
             text-align: center;
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            color: #666;
             margin-bottom: 2rem;
         }
-        a.download-link {
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #217346;
+        }
+        .download-link {
             display: inline-block;
             background-color: #217346;
             color: white;
-            padding: 14px 28px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 6px;
             text-decoration: none;
-            font-size: 1rem;
-            transition: background-color 0.2s;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
         }
-        a.download-link:hover {
+        .download-link:hover {
             background-color: #1a5c38;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.82rem;
+            line-height: 1.5;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+            max-width: 400px;
+            word-wrap: break-word;
+        }
+        th {
+            background-color: #217346;
+            color: white;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #eef6f0;
+        }
+        td:first-child {
+            font-weight: 600;
+            background-color: #f0f7f3;
+            min-width: 180px;
+            max-width: 250px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+  <div class="container">
+    <header>
         <h1>Bijlage Scriptie</h1>
-        <p>Klik op de knop hieronder om het Excel-bestand te downloaden.</p>
-        <a class="download-link" href="Informatie Factsheet en Green Bond Framework COPY.xlsx" download>
-            Informatie Factsheet en Green Bond Framework COPY.xlsx
-        </a>
+        <p>Informatie Factsheet en Green Bond Framework</p>
+    </header>
+
+    <h2>EuGB Factsheet</h2>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Column1</th>
+          <th>A2A</th>
+          <th>Île-de-France Mobilités</th>
+          <th>ABN AMRO</th>
+        </tr>
+        <tr>
+          <td>General information</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1. Date of publication of the European Green Bond Factsheet</td>
+          <td>29/01/2025.</td>
+          <td>21st January 2025</td>
+          <td>14 February 2025.</td>
+        </tr>
+        <tr>
+          <td>2. Legal name of the Issuer</td>
+          <td>A2A S.p.A.</td>
+          <td>Île-de-France Mobilités (IDFM)</td>
+          <td>ABN AMRO Bank N.V.</td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td></td>
+          <td>Etablissement public à caractère administratif</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3. Legel entity Identifier (LEI) of the Issuer:</td>
+          <td>81560076E3944316DB24.</td>
+          <td>969500A5KNK9VZQKNQ79</td>
+          <td>BFXS5XCH7N0Y05NIXW11</td>
+        </tr>
+        <tr>
+          <td>4. Website address providing investors with information on how to contact the issuer:</td>
+          <td>https://www.gruppoa2a.it/ en/investors/contacts.</td>
+          <td>https://www.iledefrance-mobilites.fr/en/about-us/investors-relations</td>
+          <td>www.abnamro.com/ir and investorrelations@nl.abnamro.com</td>
+        </tr>
+        <tr>
+          <td>5. Name of the bond assigned by the issuer:</td>
+          <td>€500,000,000 3.625% European Green Bond due 30 January 2035.</td>
+          <td>EU Green Bonds</td>
+          <td>green bonds issued as European Green Bonds under Regulation (EU) 2023/2631 of the European Parliament and of the Council (the “EuGB Regulation”)</td>
+        </tr>
+        <tr>
+          <td>6. ISIN of the bond:</td>
+          <td>XS2986639701.</td>
+          <td>FR001400X2F1</td>
+          <td>ISINs of European Green Bonds issued as from 14 February 2025</td>
+        </tr>
+        <tr>
+          <td>7. Issuance data:</td>
+          <td>30/01/2025.</td>
+          <td>2025.</td>
+          <td>European Green Bonds issued as from 14 February 2025</td>
+        </tr>
+        <tr>
+          <td>8. Identify and contact details of the external reviewer:</td>
+          <td>Sustainable Fitch Ireland Ltd, LEI: 213800JBPPIRON5YQ587, Quentin Rossi (quentin.rossi@sustainablefitch.com), Vangelis Grapsas (vangelis. grapsas@sustainablefitch.com) and Saga Rad (saga.rad@sustainablefitch.com).</td>
+          <td>KPMG S.A., Tour Eqho, 2 avenue Gambetta, 92400 Courbevoie</td>
+          <td>ISS-Corporate, SPOsales@iss-corporate.com</td>
+        </tr>
+        <tr>
+          <td>9. Competent authority that has approved the bond prospectus:</td>
+          <td>Commissione Nazionale per le Società e la Borsa (CONSOB).</td>
+          <td>Autorité des marchés financiers (“AMF“)</td>
+          <td>the AFM (the Netherlands)</td>
+        </tr>
+        <tr>
+          <td>Important information</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>This bond uses the designation “European Green Bond” or “EuGB” in accordance with Regulation (EU) 2023/2631 of the European Parliament and of the Council1.</td>
+          <td>The EU Green Bonds use the designation “European Green Bond” or “EuGB” in accordance with Regulation (EU) 2023/2631 of the European Parliament and of the Council (the “EuGB Regulation”).</td>
+          <td>These bonds use the designation &#x27;European Green Bond&#x27; or &#x27;EuGB&#x27; in accordance with the EuGB Regulation.</td>
+        </tr>
+        <tr>
+          <td>Environmental strategy and rationale</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>The issuer intends, after the full allocation of an amount equal to the proceeds of this European Green Bond, and at least once during the bond lifetime, to draw up and make public a European Green Bond impact report on the environmental impact of the use of the bond proceeds, in accordance with Article 12(1) of Regulation (EU) 2023/2631. The issuer intends to have such impact report(s) reviewed by an external reviewer, in accordance with Article 12(3) of Regulation (EU) 2023/2631.</td>
+          <td>Île-de-France Mobilités will, after the full allocation of an equivalent amount to the proceeds of the EU Green Bonds, and at least once during the lifetime of the EU Green Bonds, issue an impact report on the environmental impact of the use of the EU Green Bonds proceeds, in accordance with Article 12(1) of the EuGB Regulation. Île-de-France Mobilités intends to have such impact report(s) reviewed by an external reviewer, in accordance with Article 12(3) of the EuGB Regulation.</td>
+          <td>ABN AMRO will provide an allocation report on an annual basis within 270 days of the end of each calendar year in line with Annex II and will provide impact reports in line with Annex III of the EuGB Regulation. Pre-issuance, an external verifier will verify alignment with the EuGB Regulation. Post-issuance, an external verifier will verify the relevant allocation report. The impact report may be prepared by an external consultant but will not be reviewed by an external reviewer.</td>
+        </tr>
+        <tr>
+          <td>1. Overview</td>
+          <td>This European Green Bond will support and strengthen the implementation of A2A’s sustainability strategy focused on energy transition and circular economy, pursuing the climate change mitigation environmental objective as referred to in Article 9 of Regulation (EU) 2020/852. The proceeds are mainly expected to finance the increase in renewable energy installed capacity and the development of electricity networks managed by A2A.</td>
+          <td>Île-de-France Mobilités is the Organising Authority for Mobility (Autorité Organisatrice des Mobilités) in the Île-de-France region and is responsible for developing public passenger transport services throughout the region. The environmental strategy of Île-de-France Mobilités and the environmental objectives pursued in issuing the EU Green Bonds, are consistent with the objective of climate change mitigation set out in Article 9(a) of Regulation (EU) 2020/852 of the European Parliament and of the Council (the “Taxonomy Regulation”). Public transport is essential to sustainable development, playing a key role in the global climate change mitigation effort by facilitating decreased usage of individual cars in favour of low-carbon public transportation. The central strategy of Île-de-France Mobilités is to develop a wide range of low-carbon public transport services in order to contribute</td>
+          <td>The key component of ABN AMRO’s climate strategy is to align its activities with a net-zero trajectory towards 2050. To achieve this target, ABN AMRO has started decarbonising its loan book, client assets portfolio and operations. More information can be found in, among others, ABN AMRO’s most recent annual report. Since decarbonizing is key, an amount equivalent to the proceeds of the green bonds issued under the EuGB Regulation will be used exclusively to finance or refinance, in whole or in part, green eligible financial loans and investments in the following categories: 1) Green buildings and/or 2) Renewable energy. These eligible assets will be further described below. These two categories of eligible assets benefit the environment and climate as they are expected to avoid/reduce carbon emissions. At the same time, these eligible assets need to adhere to relevant environmental rules and</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>to the overarching objective set out in the regional mobility plan to reduce GHG emissions from transport in the region by 25-30% by 2030 compared to 2019. This target is aligned with the national target set for the transport sector in the National Low Carbon Strategy (2020) and the transport component of the National Ecological Planning (2023). Meeting this target will require substantial investments in the modernisation and expansion of electrified rail with renewed electric rolling stock (trains, metros, tram-trains, tramways), low- emission buses, electric bicycles and related infrastructure, alongside enhancements to station accessibility for passenger with limited mobility and improvements to the ticketing system, passenger information and intermodality. To refresh the existing rail fleet, Île-de-France Mobilités has adopted two Master Plans for Railway</td>
+          <td>legislation, the EU Taxonomy Do No Significant Harm criteria and ABN AMRO’s internal policies and ESG risk assessments. ABN AMRO will allocate the issuance proceeds using the portfolio approach: the combined issuance proceeds of the outstanding pool of green bonds will be allocated for 100% to projects that are environmentally sustainable under Article 3 of the EU Taxonomy.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>and Metro Rolling Stock. For the replacement of the electric train rolling stock, more than €10bn will be invested by 2040 for 1,100 new or renovated electric trains, notably for replacements on the RER B, E, D and Transilien lines. For the metro, more than €5bn will be invested, enabling the replacement and renovation of the rubber-tyre rolling stock for metro lines. Île-de-France Mobilités will in parallel invest in the renovation, adaptation and construction of the facilities and infrastructures required to accommodate new rolling stock. Another essential pillar of Île-de-France Mobilités’ climate strategy is to convert the overall 11,000 bus and coach fleet of the region into low-emissions vehicles with the objective of having 100% clean buses by 2029 (30% of electric buses and 70% of buses running on biomethane). Île-de-France Mobilités also plans to double the number of electric bicycles made</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>available to Ile-de-France residents, bringing the total to 40,000 bicycles. Finally, in order to facilitate and encourage the use of public transport, Île-de-France Mobilités will invest in the accessibility and intermodality of stations, the improvement of the ticketing system, etc. As part of its environmental strategy, Île-de-France Mobilités intends to issue EU Green Bonds to contribute to a low carbon economy.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2. Link with the assets, turnover, CapEx, and Opex key performance indicators</td>
+          <td>The proceeds will contribute to finance the Group EU taxonomy-aligned capital and operating expenditures. As of today, the issuer does not have available information to quantify the extent of this contribution</td>
+          <td>N/A – Île-de-France Mobilités is not subject to Article 8 of the Taxonomy Regulation.</td>
+          <td>The bond proceeds are expected to contribute to alignment with the EU Taxonomy objective: Climate Change mitigation. Both renewable energy and sustainable buildings are part of our climate targets in line with the Net Zero Banking Alliance science-based approach.</td>
+        </tr>
+        <tr>
+          <td>3. Link to the transition plans</td>
+          <td>The proceeds will support the implementation of A2A’s transition plan, particularly focusing on increasing renewable energy capacity, developing the electricity network managed by A2A, enhancing energy efficiency, and implementing further decarbonization measures. A2A mentions the information about its transition plan in the following documents: 1. Integrated Report 2023, available at the following link: https://content.gruppoa2a.it/sites/default/ files/2024-05/integrated-financial-statements-2023.pdf 2. Strategic Plan 2024-2035, available at the following link: https://content.gruppoa2a.it/sites/default/ files/2024-11/strategic-plan-update-24-35.pdf 3. Sustainable Finance Framework 2024, available at the following link: https://content.gruppoa2a.it/sites/ default/files/2024-07/A2A-sustainable-finance-framework-july-2024.pdf</td>
+          <td>[N/A] – Île-de-France Mobilitésis not required to publish plans pursuant to Article 19a(2), point (a)(iii) or Article 29a(2), point (a)(iii), of Directive 2013/34/EU. Moreover, Îlede-France Mobilités has not voluntarily published a transition plan.</td>
+          <td>In line with the focus on sustainability, ABN AMRO published its Climate Strategy document in 2022. This document incorporates a transition plan. The criteria for real estate and renewable energy in our climate strategy are in line with the allocation criteria for the bond proceeds. Further the criteria for residential real estate are aligned with the criteria for the Green Asset Ratio.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>A2A plans to publish more detailed information about its transition plan by 2025.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4. Securitisation</td>
+          <td>This European Green Bond is not a securitisation bond.</td>
+          <td>N/A</td>
+          <td>Not applicable</td>
+        </tr>
+        <tr>
+          <td>Intended allocation of bond proceeds</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1. Intended allocation to taxonomy-aligned economic activities</td>
+          <td>The issuer intends to allocate an amount equal to the net European Green Bond proceeds to capital and operating expenditures in accordance with the gradual approach, referred in Article 4(1) of Regulation (EU) 2023/2631. This European Green Bond is not a securitisation bond. • An amount equivalent to the net bond proceeds will be fully allocated to activities that are 100% environmentally sustainable under Article 3 of Regulation (EU) 2020/852, according to the methodology set out in the allocation report, that will be published annually until the full allocation of the bond proceeds, in accordance with Article 11 of Regulation (EU) 2023/2631. • The estimated share of proceeds for financing capital and operating expenditures (in the year of issuance or after the year of issuance) is appr. 50-55%; for refinancing capital and operating expenditures is appr. 45-50%.</td>
+          <td>Île-de-France Mobilités is allocating an amount equivalent to the EU Green Bonds proceeds to assets and/or expenditures according to the gradual approach, in accordance with Article 4(1) of the EuGB Regulation that defines in particular the categories of assets and expenditures for the use of proceeds of EU Green Bonds. o The factsheet relates to senior unsecured bonds. The EU Green Bonds are not securitization bonds. o 100 percent of an amount equivalent to theEU Green Bonds proceeds will be used on activities that are environmentally sustainable under Article 3 of the Taxonomy Regulation, according to the methodology set out in the allocation report that will be drawn-up annually by Île-de-France Mobilités until the full allocation of the EU Green Bonds proceeds, in accordance with Article 11 of the EuGB Regulation. Indication of the estimated share of the EU Green</td>
+          <td>As also described above, ABN AMRO has determined the following two categories to which proceeds are allocated: +TABEL</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>The operating expenditures will include those incurred within a maximum of three years prior to this European Green Bond issuance date. • The issuer is not a sovereign. • This European Green Bond will contribute to climate change mitigation environmental objective as referred to in Article 9 of Regulation (EU) 2020/852. • The proceeds allocation to EU Taxonomy-aligned economic activities (with NACE codes) is expected to be split as follows: - 4.1 “Electricity generation using solar photovoltaic technology” – NACE codes: D35.11, F42.22 – appr. 23%. - 4.3 “Electricity generation from wind power” – NACE codes: D35.11, F42.22 – appr. 8%. - 4.5 “Electricity generation from hydropower” – NACE codes: D35.11, F42.22 – appr. 8%. - 4.9 “Transmission and distribution of electricity” – NACE codes: D35.12, D35.13 – appr. 40%.</td>
+          <td>Bonds proceeds to be used for financing (in the year of issuance or after the year of issuance) and refinancing: o 50%-60% financing o 40%-50% refinancing Where the issuer is a sovereign, and bonds proceeds are planned to be allocated to tax relief as set out in Article 4(3) of the EuGB Regulation, an estimate of the expected volume of revenue loss associated with eligible tax relief: N/A The targeted environmental objective of the EU Green Bonds, as referred to in Article 9 of the Taxonomy Regulation, is climate change mitigation. An amount equivalent to the EU Green Bonds proceeds will be allocated to the following economic activities, in accordance with Delegated Regulation (EU) 2021/2139 and the provisions of the Taxonomy Regulation for the climate change mitigation objective, with their respective NACE codes, set out by the statistical classification of economic</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>4.10 “Storage of electricity” (No NACE code available) – app. 4%. 5 A2A European Green Bond Factsheet 2024 - 5.5 “Collection and transport of non-hazardous waste in source segregated fractions” – NACE codes: E38.11 – appr. 12%. - 7.3 “Installation, maintenance and repair of energy efficiency equipment” – NACE codes: F42, F43, M71, C16, C17, C22, C23, C25, C27, C28, S95.21, S95.22, C33.12 – appr. 5%. • The economic activities mentioned above have been classified by A2A into four categories: - Renewable energy (EU taxonomy activities: 4.1, 4.3, 4.5, 4.10) – appr. 43% of expected allocation split. - Energy efficiency (EU taxonomy activity: 7.3) – appr. 5% of expected allocation split. - Transmission and distribution networks (EU taxonomy activity: 4.9) – appr. 40% of expected allocation split.</td>
+          <td>activities established by Regulation (EC) 1893/2006: o 6.1. Passenger interurban rail transport (NACE code: H49.10) o 6.3. Urban and suburban transport, road passenger transport (NACE code: H49.31) o 6.4. Operation of personal mobility devices (NACE code: 77.21) o 6.14. Infrastructure for rail transport (NACE code: F52.21 / F42.12) o 6.15. Infrastructure enabling low-carbon road transport and public transport (NACE code: F52.21 / F42.12) All economic activities described above are related to clean transportation and have been classified by Île-de-France Mobilités into four categories: 1. Renovation and renewal of urban, suburban and road passenger transport with 0 direct (tailpipe) CO2 emissions such as electric bus or aerial cableways – (EU Taxonomy activity 6.3., as described above)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Pollution prevention and control (EU taxonomy activity: 5.5). – appr. 12% of expected allocation split.</td>
+          <td>2. Renovation and renewal of public electric rail transport rolling stock with 0 direct (tailpipe) CO2 emissions(train, metro, tram train, tramway) – (EU Taxonomy activities 6.1. and 6.3., as described above) 3. Renovation and renewal of infrastructure enabling low-carbon public transport – (EU Taxonomy activity 6.15., as described above) 4. Improving the quality of service for mobility – (EU Taxonomy activities 6.1., 6.3, 6.4., 6.14 and 6.15., as described above)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2. Intented allocation to specific taxonomy-aligned economic activities</td>
+          <td>• The above-mentioned allocation includes the following enabling economic activities: - 4.9 “Transmission and distribution of electricity” (40% of expected allocation split). - 4.10 “Storage of electricity” (4% of expected allocation split). - 7.3 “Installation, maintenance and repair of energy efficiency equipment” (5% of expected allocation split). • The proceeds will not be allocated to transitional activities. • The proceeds will not be allocated to activities related to nuclear energy or fossil gas.</td>
+          <td>Île-de-France Mobilités does not plan to allocate the EU Green Bonds proceeds to transitional activities: while activities 6.1 Passenger interurban rail transport and 6.3 Urban and suburban transport, road passenger transport can include transitional activities for bi-mode trains and nonzero direct tailpipe emissions road vehicles, Île-de-France Mobilités only allocates proceeds to zero direct tailpipe emissions rolling stock with Green Bonds, and will have the same approach for EU Green Bonds. Île-de-France Mobilités finances the following enabling activities: 6.14. Infrastructure for rail transport &amp; 6.15. Infrastructure enabling low-carbon road transport and public transport. Enabling activity is expected to represent around 25% of the allocated proceeds. Where applicable, the amount and proportion of proceeds intended to be</td>
+          <td>Not applicable</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>allocated to taxonomyaligned activities related to nuclear energy and fossil gas in accordance with Articles 10(2) and 11(3) of the Taxonomy Regulation: N/A</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3. Intended allocation to economic activities not aligned with the technical screening criteria</td>
+          <td>The proceeds will not be allocated in accordance with Article 5 of Regulation (EU) 2023/2631 to activities which are not fully EU taxonomy aligned. The proceeds will be allocated in accordance with the EU taxonomy alignment requirements.</td>
+          <td>N/A</td>
+          <td>Not applicable</td>
+        </tr>
+        <tr>
+          <td>4. Process and timeline for allocation</td>
+          <td>A2A will endeavour to fully allocate an amount equal to the net proceeds within 24 months following the bond issuance.The description of the alignment analysis for each selected taxonomy activity is provided in the Appendix 1 of this Factsheet.</td>
+          <td>The full allocation of EU Green Bonds proceeds is expected to be completed within one (1) year, and no later than two (2) years, from the issuance date. Île-de-France Mobilités has identified and put in place the required processes to ensure that the projects selected are aligned with the requirements of the EU Taxonomy Delegated Acts on climate change mitigation (in particular, the Commission Delegated Regulation (EU) 2021/2139), including: • the eligibility of the activity to EU Taxonomy Delegated Acts on climate change mitigation, • the Substantial Contribution Criteria (‘SCC’), • the Do No Significant Harm criteria (‘DNSH’), • and the Minimum Social Safeguards (‘MSS’). This analysis is first based on: 1) European, national and regional regulations or plan with which projects financed needs to comply with</td>
+          <td>ABN AMRO will allocate the proceeds of issued and outstanding green bonds on a portfolio basis. At the time of issuance the issuance proceeds will be fully allocated to refinance eligible assets. After issuance, the actual allocations may vary depending on the development of the eligible asset portfolio. Unallocated proceeds (if any) will be temporarily invested in debt instruments issued by sovereigns, supranationals, agencies, development banks or financial institutions that are rated &#x27;Prime&#x27; by Institutional Shareholder Services (ISS) ESG. Potential eligible assets support our climate strategy and are expected to comply with local laws and regulations, including any applicable regulatory environmental and social requirements such as set out in Article 3 of the Taxonomy. As part of the regular credit approval process, potential eligible assets are furthermore assessed against the environmental, social and ethical criteria of ABN AMRO’s Sustainability</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>2) Île-de-France Mobilités’ own policies, processes, for example clauses in tenders or contracts or charters (green charter, worksite charter) 3) When Île-de-France Mobilités is not the project manager of the project, the alignment with the EU Taxonomy is also validated by the information shared by operators, which may already have been reviewed by an independent auditor in the context of the EU Taxonomy disclosure regulation. The first step of the analysis is the pre-selection of potential eligible expenditures carried out by the Finance and Public Procurement Department who will first carry out a pre-selection of project expenditures: • Based on its financial management software, Île-de-France Mobilités identifies expenditures that are part of an internal classification of four activities that contribute to the mitigation of climate change and which are described in the factsheet.</td>
+          <td>Risk Policy (“SRP”), where applicable. The SRP includes a sustainability risk standard with specific sector requirements and an exclusion list. Selected project finance activities are expected to follow voluntary standards, such as the Equator Principles, as part of our Sustainability Risk Standard for Lending &amp; Project Finance. ABN AMRO has established an ESG Bond Working Group to support the governance around selection, issuance and reporting on the use of proceeds for the outstanding pool of Green Bonds. The ESG Bond Working Group consists of representatives of the Sustainable Centre of Excellence, ALM/Treasury, DCM/Sustainable Markets, and if required specialists in the Eligible Asset categories.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>• A project expense identified as being part of one of these four categories is confirmed eligible for one of the activities in the EU Taxonomy. Each category covers one or more activities of the EU Taxonomy, as presented above in the factsheet. Then the Finance and Public Procurement Department earmarks each of the identified expenditures to the corresponding economic activity of the EU Taxonomy Delegated Acts on climate change mitigation. The second step consists in the assessment of the alignment of the pre-selected expenditures with the corresponding Substantial Contribution Criteria of the EU Taxonomy. This process is overseen by the Finance and Public Procurement Department with the input of the operational departments, based on both qualitative and quantitative data. For the alignment with the Do No Significant Harm (“DNSH”) principles of the EU Taxonomy, Îlede-France Mobilités has developed an internal mapping of the</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>DNSH criteria corresponding to European and / or French legislation with which Île-de-France Mobilités complies. The remaining criteria are addressed by regional plans, internal policies of Île-de-France Mobilités or commitment from the operators. In addition, for the Minimum Social Safeguards, Île-de-France Mobilités has processes in place covering both its own operations and that of operators, for example under procurement procedures in public contracts French law stipulates that public contracts may not be awarded to economic operators that have been found guilty of fraud, corruption, or the trafficking or exploitation of human beings. Specifically for operators that comply with the EU taxonomy, Île-de-France Mobilités checks the compliance with Minimum Social Safeguards in their annual report. In addition, due to its status as a public-sector entity, Île-de-France Mobilités is subject to local regulations to ensure the respect of</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>human and labor rights and compliance with national corruption, taxation, and fair competition requirements. In addition, Île-de-France Mobilités has measures in place to ensure good working conditions, tax compliance, and the fight against bribery and corruption. The Finance and Public Procurement Department oversees the gathering of all the information required to assess the compliance of the pre-selected expenditures with all the DNSH and Minimum Safeguards. Only expenditures assessed from this process as in compliance with all the criteria are considered eligible for EU Green Bond(s). Ile-de-France Mobilités mandated an external auditor to provide a pre-issuance review report on the compliance of the European Green Bond Factsheet, in all material aspects, with Articles 4 to 8 and Annex I of Regulation (EU) 2023/2631, and with the requirements of that regulation concerning the use of</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>proceeds. The external auditor confirmed that the Factsheet complies with these requirements1.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>The ESG Bond Working Group</td>
+          <td></td>
+          <td></td>
+          <td>• reviews and approves allocations of bond proceeds to eligible assets on at least an annual basis; • reviews and approves the publication of Second Party Opinion (SPO) reports, reviews and where necessary addresses any topics as a result of post-issuance review reports, and reviews and validates the outstanding and impact reports; • checks on a regular basis if ABN AMRO’s Green Bond Framework requires updates as a result of changes in common market practice, in ABN AMRO’s business or ESG strategy and policies, regulatory requirements including but not limited to the EU Taxonomy, other taxonomies, new or updated EU Delegated Acts, the EuGB Regulation, etc; • approves any changes/updates of ABN AMRO’s Green Bond Framework; and • will evaluate alignment with the required Substantial Contribution criteria, Do No Significant Harm criteria and Minimum (Social) Safeguards</td>
+        </tr>
+        <tr>
+          <td>5. Issuance costs</td>
+          <td>A2A will fully allocate an amount equal to the net proceeds of the bond as indicated in the Final Terms of this European Green Bond. The net proceeds are calculated deducting the issuance costs related to the underwriting and placement from the issue price of the European Green Bond. The amount of the issuance costs related to the underwriting and placement is € 1,300,000.00.</td>
+          <td>Île-de-France Mobilités will allocate the gross proceeds from the issuance of EU Green Bonds, without deduction of costs, to environmentally sustainable economic activities.</td>
+          <td>Issuance costs will not be deducted from the bond proceeds.</td>
+        </tr>
+        <tr>
+          <td>Environmental impact of bond proceeds</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>The information on the environmental impacts of the bond proceeds will be provided in the post-issuance impact report, after the full allocation of the proceeds of this European Green Bond, and at least once during the lifetime of this bond, in accordance with i) Article 12(1) of Regulation (EU) 2023/2631, ii) A2A’s Sustainable Finance Framework and iii) best market practices. • A2A prefers to report on actual impacts, rather than ex-ante estimates, aiming to transparently communicate the effective environmental results achieved and ensure the robustness of its methodology. Detailed information on the methodologies and assumptions behind the indicators are disclosed in the annual Sustainability Reporting, available on the issuer’s website and externally verified. Examples of relevant impact metrics could include: - RES installed capacity (MW),</td>
+          <td>Île-de-France Mobilités will, after the full allocation of an amount equivalent to the proceeds of the EU Green Bonds, and at least once during the lifetime of the EU Green Bonds, issue an impact report on the environmental impact of the use of the EU Green Bonds proceeds. In each impact report, Île-de-France Mobilités will endeavor to use a relevant methodological approach to provide the environmental impact of the projects, and will disclose the key underlying assumptions and sources used in the computation of the impact reporting metrics. Listed in the table below are the qualitative environmental benefits identified by Île-de-France Mobilités for each of the 5 economic activities of allocation listed above, as well as examples of impact metrics. Île-de-France Mobilités has defined a methodology for calculating the reduction in GHG emissions, which was verified by KPMG in</td>
+          <td>ABN AMRO shall ensure that the annual allocation report will be reported on its website. Previous reports are also available on this website. Pre-issuance, estimates of anticipated environmental impacts cannot be provided, since it is difficult to provide a good indication as portfolio and allocation to eligible categories can vary. Also the relative avoided emissions vary as the base portfolio emissions will vary and conversion factors of energy to CO2 are published at country level and depend on many variables.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>European Green Bond Factsheet 2024 A2A 6 - Energy production from RES (GWh/year), - GHG emission avoided (tCO2eq), - Energy savings (kWh), - Installed capacity of the electric network (MVA), - Distributed energy (GWh), - Additional km of electricity network (km), - Amount of municipal waste collected (t), - % of waste sent to material recovery, - Amount of special waste collected (kt)</td>
+          <td>the context of the review of Île-de-France Mobilités’ 2023 Green Bond Report and 2024 Green Financing Report. Île-de-France Mobilités expects to use the same methodology for calculating the reduction in GHG emissions for reporting on the environmental impact of EU Green Bonds proceeds. + TABEL</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Information on reporting</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>• Link to the issuer’s website as required by Article 15(1) of the Regulation (EU) 2023/2631: Sustainable financing | A2A (gruppoa2a.it) • Link to the issuer’s relevant reports: 1. Consolidated financial statement is available at: https://content.gruppoa2a.it/sites/default/files/2024-05/ consolidated-financial-statements-2023.pdf. 2. Sustainability report (pursuant to Directive 2013/34/EU) is available at: https://content.gruppoa2a.it/sites/ default/files/2024-05/integrated-financial-statements-2023.pdf • The first reporting period starts on the European Green Bond’s issuance date. • Where feasible, the allocation reports will include project-by-project information on amounts allocated and the environmental impacts</td>
+          <td>Link to relevant reports / disclosures required by Article 15(1) of the EuGB Regulation: https://www.iledefrance-mobilites.fr/en/about-us/investors-relations Link to sustainability report: https://www.iledefrance-mobilites.fr/en/about-us/investors-relations The allocation reports, to be issued by Île-de-France Mobilités in accordance with Article 11 of the EuGB Regulation, will include project-by-project information on amounts allocated and the expected environmental impacts.</td>
+          <td>In general investors are referred to the investor relations portal on the company’s website (www.abnamro.com/ir) and relevant reports can be found in the bond holders subjection on green bonds on www.abnamro.com/greenbonds. For the avoidance of doubt, allocation reports will not include project-by project information. More sustainability information, such as the consolidated management reports or consolidated sustainability reports pursuant to Directive 2013/34/EU, can be found on www.abnamro.com/download-centre.</td>
+        </tr>
+        <tr>
+          <td>CapEx plan</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>No CapEx plan referred to in Article 7 of Regulation (EU) 2023/2631 is needed as A2A will allocate the proceeds only to activities that are already fully aligned with the EU taxonomy.</td>
+          <td>[N/A] – Île-de-France Mobilités will only allocate an amount equivalent to the proceeds of EU Green Bonds to expenditures and assets aligned with the EU Taxonomy. Therefore, the CapEx plan referred to in Article 7 of the EuGB Regulation is not applicable.</td>
+          <td>Not applicable</td>
+        </tr>
+        <tr>
+          <td>Other relevant information</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Not Applicable.</td>
+          <td>In March 2024, Île-de-France Mobilités published an updated Green Financing Framework to align with the more recent Green Bond market practices and to cover under the same framework both Green Bonds and Green NeuCP. Investors can find details about the environment strategy of Île-deFrance Mobilités and other topics (technological innovations on the rolling stock in favor of sustainable development; requirements regarding the end-of-life of rolling stock, etc.) in this document. In particular, Île -de-France Mobilités established rigorous processes to ensure that the eligibility criteria of its Green Financing Framework are fully consistent with the requirements of the EU Taxonomy Delegated Acts on climate change mitigation (Commission Delegated Regulation (EU) 2021/2139 of 4 June 2021).</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>Linkjes Factsheet:</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>A2A</td>
+          <td>https://content.gruppoa2a.it/sites/default/files/2025-01/a2a-european-green-bond-factsheet.pdf</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Île-de-France Mobilités</td>
+          <td>https://portail-idfm.cdn.prismic.io/portail-idfm/Z5zvYZbqstJ9-GTt_IDFMEuGBFactsheetDEFINITIVEISIN.pdf</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ABN AMRO</td>
+          <td>https://assets.ctfassets.net/1u811bvgvthc/2mKUOfOk6jp1eSYbm9qj0P/cd6973465c36bfbb3124e6d25673e445/250214_Green_Bond_Factsheet_-vF.pdf</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
     </div>
+
+    <h2>GBP</h2>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Green Financing Framework</th>
+          <th>A2A</th>
+          <th>Île-de-France Mobilités</th>
+          <th>ABN AMRO</th>
+        </tr>
+        <tr>
+          <td>Introduction</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Green &amp; Blue Financing Instruments issued under this Framework will align with the Green Bond Principles (GBPs), administered by the International Capital Market Association (ICMA) – 2025 version with June 2022 Appendix and the Green Loan Principles (GLPs) published by the Loan Market Association (LMA) – 2025 version and their four core components: • Use of Proceeds; • Process for Project Evaluation and Selection; • Management of Proceeds; • Reporting. Blue Financing Instruments issued under this Framework will also align with the Guidelines for Blue Finance Version 2.0, developed and published by the International Finance Corporation (IFC) in September 2025. For Blue financing instruments the proceeds will be exclusively allocated to the Sustainable water and wastewater management project category (“Eligible Blue Projects category”). .</td>
+          <td>Île-de-France Mobilités published its first Green Bond Framework in 2021 and has issued €4.3bn of Green Bonds by the end of 2023. This new Green Financing Framework 2024 (the “Framework”) aims to reflect the latest best market practices and has been extended to cover Green Bonds, Green Private Placements and Green Negotiable European Commercial Papers (together the “Green Financing Instruments”). This Framework covers two types of financing instruments that may be issued by Île-de-France Mobilités: • Long term financing instruments (such as Green Bonds or Green Private Placements) to finance long-term investments; • Short term financing instruments (such as Green Negotiable European Commercial Papers “Green NEU CP”) to finance short-term (annual) operating expenses.</td>
+          <td>The goal of this Green Bond Framework is to ensure the transparency, disclosure, integrity and quality of green bond issuances. Another important goal is to finance the investments and loans related to our climate plan on the topics renewable energy and commercial and residential real estate. ABN AMRO also aims to align with EU Taxonomy Climate Change Mitigation objectives as defined by the European Union and the UN Sustainable Development Goals. Under this Framework we can issue different types of green bonds (including senior unsecured and subordinated bonds) and potentially in the future covered bonds, commercial paper and green deposits that meet the eligibility criteria set out in section 2.1.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>EU Regulations: It is A2A’s intention to follow the best market practices as the market standards and the EU regulation develops. Therefore, A2A has taken into account the technical screening criteria for substantial contribution to the six environmental objectives of the EU Commission stemming from the Delegated Acts of the EU Taxonomy Regulation20 to draft the eligibility criteria for Eligible Projects defined below, where applicable. Furthermore, A2A commits to providing in each allocation reporting the share of the amount equivalent to the net proceeds that has been allocated to projects fully aligned with the EU Taxonomy Regulation. On November 22, 2023, the EuropeanParliament and the Council adopted Regulation (EU) 2023/2631 on European Green Bonds and voluntary disclosure for bonds marketed as environmentally sustainable and Sustainabilitylinked Bonds.</td>
+          <td>This Framework complies with the Green Bond Principles (updated as of 2021)(2) (the &quot;GBP&quot;) published by the International Capital Market Association (ICMA) and its four pillars, which are as set out in this Framework: 1. Use of Proceeds 2. Process for project Evaluation and Selection 3. Management of Proceeds 4. Reporting</td>
+          <td>This Framework is aligned with both the Green Bond Principles 2021 including the June 2022 Appendix I (“GBP”)2 and with the 2021 version of the EU Taxonomy on a “best efforts” basis4, as confirmed by the pre-issuance review. This includes the Significant Contribution criteria, Do Not Significant Harm criteria and Minimum Social Safeguards5. As a financial institution, our main focus is on financial assets (i.e. loans to our clients) as defined in section 2.1. Going forward, ABN AMRO intends to closely monitor emerging best practices, such as the finalisation or update of the categories of the EU Taxonomy Delegated Act and the European Green Bond Standard (EU GBS). Should ABN AMRO opt for a ‘European green bond’ or EuGB designation as described in the EU GBS, this will be reflected in the relevant issuance documentation and the European green bond factsheet as laid down in Annex 1 of the EU GBS.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>This new Regulation introduced the European Green Bond Standard (EU GBS), which sets out the criteria that green bonds must meet to obtain the “European Green Bond” label and is applicable starting from December 21, 2024. When drafting this Framework A2A has taken into consideration the requirements of the EU GBS in order to adhere to the standard and be able to issue European Green Bonds also compliant with this Framework and subject to provision of the specific documentation required by the Regulation. Furthermore, A2A Group and all its Green Bonds are included in the Paris-aligned EU benchmarks.</td>
+          <td></td>
+          <td>This factsheet will require a positive opinion by an external reviewer as described in the EU GBS regulation. This legislation is expected to enter into force at the end of 2024. Currently it is not yet possible to obtain a ’EuGB’ or ‘European Green Bond’ designation. Nevertheless we have asked our Second Party Opinion (SPO) provider to check alignment with the EU GBS (as of October 2023) on a best efforts basis6 . The SPO report is available on our website. The Framework is aligned with the four core components of the GBP and includes guidelines regarding external review. The following part of the Framework covers: 1. Use of proceeds 2. Process for evaluation and selection 3. Management of proceeds 4. Reporting 5. External review</td>
+        </tr>
+        <tr>
+          <td>1. Use of Proceeds</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>An amount equal to the net proceeds from the issuance of the Green &amp; Blue Financing Instruments will be used to finance or refinance, in full or in part, new or existing Eligible Green &amp; Blue Projects as defined below. Eligible Green &amp; Blue Projects may include capital expenditures (Capex), operating expenditures (Opex) related to improvement and maintenance of Eligible Green &amp; Blue Projects, research and development, as well as fixed asset at their current IFRS balance sheet value and the acquisitions of the majority stake of entities deriving at least 90% of revenues or 90% of the balance sheet derived from activities identified as Eligible Green &amp; Blue Projects. Any project, asset, expenditure, or investment (including unallocated proceeds) related to the following activities will be excluded: • Fossil energy generation; • Nuclear energy generation; • Development of new gas distribution pipelines/networks.</td>
+          <td>An amount equivalent to the net proceeds raised from all Île-de-France Mobilités Green Financing Instruments issued under this Framework will be allocated, in part or in full, to finance or re-finance eligible projects in line with the eligibility criteria detailed below (the &quot;Eligible Green Projects&quot;). Île-de-France Mobilités has identified and put in place the required processes to ensure that the eligibility criteria are aligned with the requirements of the EU Taxonomy Delegated Acts on climate change mitigation (Commission Delegated Regulation (EU) 2021/2139 of 4 June 2021) (details in Section V), including: • the substantial contribution criteria (‘SCC’), • the do no significant harm criteria (‘DNSH’) • and the minimum safeguards (‘MSS’).</td>
+          <td>An amount equivalent to the net proceeds of the green bonds issued under this Framework will be used exclusively to finance or refinance, in whole or in part, green eligible financial loans and investments (Eligible Assets) in the following categories: 1. Green buildings 2. Renewable energy These two categories benefit the environment and climate as they are expected to avoid/reduce carbon emissions. At the same time, adverse environmental impacts will be avoided/limited due to adherence to environmental rules and legislation, alignment with the EU Taxonomy Do No Significant Harm criteria and internal policies and ESG risk assessments. ABN AMRO will allocate the issuance proceeds using a portfolio approach: the combined issuance proceeds of the outstanding pool of green bonds will be allocated for 100% to projects that are environmentally sustainable under</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>+TABEL</td>
+          <td>This analysis has been verified by an external third party as part of the Second Party Opinion, which confirms the alignment of the Framework with the EU Taxonomy. Eligible Green Projects may include capital and operating expenditures for the operation and servicing of eligible projects disbursed no earlier than 24 months preceding an issuance.For Green Negotiable European Commercial Papers, allocation will be exclusively made to operating expenditures for the current calendar year. All the projects funded are located in France. For any Eligible Green Projects that would be co-financed with another entity (such as loan from the Banque des Territoires, Ville de Paris, Region Ile-de-France, a transport operator and the French Government), only the portion of projects financed or re-financed by Île-de-France Mobilités will be considered as eligible(3).</td>
+          <td>Article 3 of the EU Taxonomy. For the avoidance of doubt, the green bonds issued under this Framework are not securitisations. To qualify as Eligible Assets, the assets are required to meet the eligibility criteria (Eligibility Criteria) below: + TABEL</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>All the following sub-categories are considered to be included in the Green Bond Principles Project Category “Clean Transportation”. + TABEL Île-de-France Mobilités has set up a programme to issue Green NEU CP with the Banque de France. The purpose of this programme is to finance or re-finance short-term expenses i.e. operating costs(4) under contracts with public transport operators such as SNCF in the Ile-de-France region. All the expenditures financed or re-financed by this Green NEU CP programme are also aligned with the use of proceeds requirements set forth above. Given the nature of the activity of Île-de-France Mobilités, the Eligible Green Projects financed or re-financed under this Framework also contribute positively to some of the social objectives core to the Île-de-France Mobilités’ sustainability strategy, in particular:</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>• Ensuring solidarity between territories and strengthening mobility • Contributing to job creation in the Île-de-France region • Providing cheaper access to transportation • Offering quality and safe public transportation Improving the quality of service for mobility contributes to mitigating climate change as an “enabling activity”. Indeed, by improving passenger information and ticketing, introducing policy to encourage the use of bicycles, and increasing accessibility, Île-de-France Mobilités contributes to the transition of an increasing number of passengers to low-carbon mobility. This type of project both helps to build passenger loyalty to low-carbon transport and to attract new passengers. Île-de-France Mobilités intends to communicate pre-issuance an estimation of proceeds allocation per category of Green Financing</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Instrument, with the exception of Green NEU CP for which such disclosure is challenging due to the monthly rolling nature of the expenses. Île-de-France Mobilités’ Eligible Green Projects will contribute to these three Sustainable Development Goals, as defined by the United Nations: SDG 9: Build resilient infrastructure, promote sustainable industrialization and foster innovation SDG 11: Make cities and human settlements inclusive, safe, resilient and sustainable SDG 13: Take urgent action to combat climate change and its impact Exclusion list: Île-de-France Mobilités has established a list of excluded projects which may not be financed or re-financed under this Framework: • The purchase of any vehicle linked to fossil fuels (including hybrid and bio-methane vehicles); • The purchase of any hydrogen-powered vehicles;</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>• The purchase/development of any operational centres of bio-methane buses; • The development of any transport infrastructures dedicated to the transport of fossil fuel; • Projects already financed or partially financed by loans granted by the European Investment Bank (“EIB”). Additionally, and for the avoidance of doubt, even though these activities are not in the scope of activity of Île-de-France Mobilités, projects financed or re-financed under this Framework will not include activities related to nuclear energy, controversial weapons, alcohol, mining and quarrying, defence activities, gambling and betting activities, distilling, rectifying and blending of spirits, palm oil, tobacco or any related controversial activities.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2. Project Evaluation and Selection Process</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Project evaluation and selection is a key process in ensuring that the projects financed and/or refinanced through the Green &amp; Blue Financing Instruments meet the Eligibility Criteria detailed in this Sustainable Finance Framework. The analysis is based on the data provided by Planning &amp; Control Department, which include the indication of the eligibility and the alignment to the EU Taxonomy. As part of the selection process, it is verified if the Eligible Green &amp; Blue Projects are also aligned as closely as possible with the EU Taxonomy Regulation and Delegated Acts, including Do No Significant Harm (DNSH) and Minimum Social Safeguards (MSS) criteria. The Eligible Green &amp; Blue Projects are also expected to comply with applicable national, European and international environmental and social standards and regulations. The selection process for Eligible Green &amp; Blue Projects</td>
+          <td>The process of selection and evaluation of Eligible Green Projects is based on Île-de-France Mobilités&#x27; internal governance system using a series of diligence reviews to ensure compliance with the criteria set out above in Section II.1 (Use of Proceeds). The process is designed to ensure that an amount equal to the net proceeds raised from Green Financing Instruments is allocated exclusively to finance or re-finance Eligible Green Projects. Île-de-France Mobilités has established a Green Financing Working Group (“GFWG”), which is composed of representatives from the following departments: • Finance and Public Procurement • Foresight and Studies and Olympic Games • Infrastructure • Rail • Surface Mobility • Intermodality, Services and Marketing • Contracts and Pricing</td>
+          <td>Potential Eligible Assets support our climate strategy as explained in section 2.1 and are expected to comply with local laws and regulations, including any applicable regulatory environmental and social requirements. As part of the regular credit approval process, potential Eligible Assets are furthermore assessed against the environmental, social and ethical (ESE) criteria of ABN AMRO’s Sustainability Risk Policy (“SRP”), where applicable. The SRP includes a Sustainability Risk standard with specific sector requirements and an exclusion list. Selected project finance activities will follow voluntary standards such as the Equator Principles as part of our Sustainability Risk Standard for Lending &amp; Project Finance. ABN AMRO has established an ESG Bond Working Group to support the governance around the selection, issuance and reporting on the use of proceeds for the outstanding pool of</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>is performed by the Finance Department and approved by the Sustainable Finance Committee as previously described. Key responsibilities The Committee is responsible for the review, validation and monitoring of the pool of Eligible Green &amp; Blue Projects, based on the Group’s sustainability strategy and this Sustainable Finance Framework. After the approval by the Committee, the list of selected potential Eligible Green &amp; Blue Projects is registered in the Green &amp; Blue Financing Register. ESG Risk Management A2A has put in place a strong evaluation and selection process, corporate sustainability and risk management framework to ensure mitigation of potential environmental and social risks associated with the Eligible Projects, in addition to applicable national and international environmental &amp; social standards and regulations.</td>
+          <td>The GFWG will be chaired by the Finance and Public Procurement Department and will meet at least once a year, at the closing of the accounts of year n for the allocation of the Green Financing Instruments issued that year. To select the projects and allocate an amount equivalent to the net proceeds resulting from the issuance of the Green Financing Instruments during year n, the Finance and Public Procurement Department will first carry out a pre-selection of eligible assets and expenditures: • Based on its financial management software for identifying capital and operating expenditures allocated to the Green Financing Instruments, Île-de-France Mobilités automatically identifies expenditures according to the eligible asset subcategories of the Framework. In accounting terms, the expenditure on these assets is made up of direct expenditures on tangible assets (construction including land,</td>
+          <td>green bonds. The ESG Bond Working Group consists of representatives of the Sustainable Centre of Excellence, ALM/Treasury, DCM/Sustainable Markets, and if required specialists in the Eligible Asset categories. The evaluation and selection process is set up as follows: ▪ On at least an annual basis the client units, as owners of the assets, make a selection based on the Eligibility Criteria defined in section 2.1. After the selection process is completed, each client unit provides a pre-defined report to the ALM/Treasury team. ▪ Based on the information provided by the client units, the ALM/Treasury and DCM/Sustainable Markets teams reviews whether the selected assets qualify as Eligible Assets. ▪ The ESG Bond Working Group reviews and approves allocations of bond proceeds to Eligible Assets on at least an annual basis.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>The Group has set up a Risk Management Department that uses a risk measurement and detection process based on the Enterprise Risk Management (ERM) method, developed in order to make risk management an integral and systematic part of the corporate management processes. Through the engagement of all corporate structures, the risk measurement process is regularly activated, enabling the identification of the most significant critical issues, the measures to monitor them and the mitigation plans. The risk profile of the Group and its companies, identified in the periodic semiannual assessment process, is analysed by the respective companies’ Board of Directors. The ERM process takes into account all possible risks, including socio-environmental and governance risks, and it assesses their impact on the company, as regards both the financial and reputational aspects.</td>
+          <td>rolling stock, works, equipment) and expenditures on intangible assets (investment subsidies paid to transport operators), disbursed by Île-de-France Mobilités in year n. • Projects will also be selected by carefully identifying assets that are partially financed by Île-de-France Mobilités’ partners, in particular RATP, SNCF and Société des Grands Projets so that only the portion of projects financed or re-financed by Île-de-France Mobilités itself is allocated to Green Financing Instruments; the objective is to avoid double counting of assets in the green financial market. In addition, all project financed or partially financed with loans by EIB will be excluded. • These eligible expenses will also be net of financing received, such as bank financing from the Banque des territoires, for certain projects up to 50% of the project cost. In a second phase, after discussions with the .</td>
+          <td>▪ The ESG Bond Working Group reviews and approves the publication of Second Party Opinion (SPO) reports, reviews and where necessary addresses any topics as a result of post-issuance review reports, and reviews and validates the outstanding and impact reports. ▪ The ESG Bond Working Group checks on a regular basis if the Framework requires updates as a result of changes in common market practice, in ABN AMRO business or ESG strategy and policies, regulatory requirements including but not limited to EU Taxonomy, other Taxonomies, new or updated EU Delegated Acts, EU GBS, etc. ▪ Any changes/updates of the Framework need approval by the ESG Bond Working Group. ▪ In the event of significant changes in the Framework (criteria or otherwise), ABN AMRO will request a review from an external reviewer.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>As an entity required to report in accordance with the CSRD, A2A aligns its sustainability risk portfolio with the topics defined by the ESRS standards. Overall, the main risk factors considered and assessed relate to: • A2A’s relationship with the community; • The nature and diversification of its business units; • A2A’s growth plan and strategic goals; • The competitive, legislative and regulatory environment; • The macroeconomic environment; • Social-environmental considerations, in particular climate change and health &amp; safety. Different policies and management systems are in place within the Group to tackle main social and governance potential issues including the Management and Coordination Regulation of the A2A Group, its Code of Ethics26, Anti-corruption policy27, Human Rights policy28, Responsible Procurement policy29, Quality Environment and Safety policy30</td>
+          <td>operational departments, projects will be selected on the basis of their alignment with the eligibility criteria defined in Section II.1 (Use of Proceeds) and existing reporting elements. The Finance and Public Procurement Department will centralize the reporting elements worked on by the operational departments in order to complete the annual reporting. Finally, the GFWG validates the selection of assets for year n based on these elements. In addition to the selection and evaluation process of the Eligible Green Projects, the GFWG is responsible for: • Reviewing on a regular basis the portfolio of Eligible Green Projects to ensure that they remain aligned with the eligibility criteria and are not subject to major ESG controversies • Excluding projects that no longer comply with the eligibility criteria, are exposed to major ESG controversies or</td>
+          <td>▪ The ESG Bond Working Group will evaluate alignment with the required Substantial Contribution criteria, Do No Significant Harm criteria and Minimum (Social) Safeguards.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>and Stakeholder Engagement policy. The Code of Ethics makes explicit reference to the UN Universal Declaration of Human Rights, the ILO Fundamental Conventions, the OECD Guidelines and the principles of the Global Compact, to which the Group adheres. It identifies the requirements aimed at ensuring that the enterprise’s activities are inspired by the following principles: • recognition and protection of the dignity, liberty and equality of human beings; • protection of workers and freedom of union association; • protection of health, of safety, of the environment and of biodiversity; • integrity, transparency, honesty and loyalty in action. All Group companies are monitored in terms of risks connected to corruption. In line with what is outlined in the Group’s Code of Ethics and the specific regulatory document, A2A Group’s</td>
+          <td>have been disposed of, and replacing them as soon as reasonably practicable • Overseeing the internal processes to identify known material risks of negative social and/or environmental impacts associated with the Eligible Green Projects and appropriate mitigation measures where feasible • Validating the allocation and impact reporting process • Validating any changes to the Framework in line with market or regulatory developments and Île de-France Mobilités’ sustainability strategy As long as Green Financing Instruments are outstanding, Île-de-France Mobilités will, to the extent feasible and practicable, regularly monitor the Eligible Green Projects according to the following themes: 1. Environnemental, 2. Risks 3. Technical 4. Financial Environmental: Environmental monitoring is carried out by the project managers in the operational</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Anti-Corruption Policy, the Group bans all forms of corruption, unlawful errors, collusive conduct, requesting of advantages, conferral of material and immaterial benefits and other advantages aimed at influencing or remunerating representatives of institution or their relatives and Group’s employees. Furthermore, A2A adopted a proper Human Rights Policy, aimed at protecting and promoting the recognition and safeguarding the dignity, freedom, equality of human beings, the protection of work, trade union freedoms, occupational health and safety, also with reference to external collaborators. Regarding the biodiversity aspects, since 2019, A2A conducted analyses on the potential interference of the A2A Group activities with the system of protected areas, namely with sites belonging to the Natura 2000 Network, IBA (Important Bird and Biodiversity Area) areas.</td>
+          <td>departments, in liaison with the operators. More specifically, the Infrastructure Department monitors the environmental impact of infrastructure projects during the construction phase, in particular by monitoring and evaluating the Avoid /Reduce / Compensate measures implemented by Île-de-France Mobilités. Risks: crises or controversies of various kinds, including ESG, may arise during either the construction phase of a project or during the operation phase (e.g. fire on a worksite). In order to resolve these crises quickly and efficiently, Île-de-France Mobilités has developed crisis and controversy management processes, for example in the event of an incident on or near its worksites. A warning system has been put in place to identify the level of crisis and the distribution of information according to the level of the incident, ranging from simple monitoring and reporting of the crisis to the setting up of</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>These analyses have been later adopted in the Do Not Significant Harm (DNSH) assessment. Furthermore, in 2022, A2A published a Policy on Biodiversity31. In 2024, a proper project was carried out to define a Biodiversity Action Plan. In the first phase of the project, the impact of the different businesses of the Group with respect to naturerelated topics was assessed, to define the priority aspects to tackle. Then, considering the LEAP (Locate, Evaluate, Assess and Prepare) approach, a gap analysis was conducted to define the maturity level of the Group on different aspects and to identify whether any initiative was already in place on different areas of action (interference monitoring, safeguards projects, governance of the topic, etc.). From such analysis, the priorities have been identified and these will be the starting point to define actual initiatives to be carried out in the next years at Business Unit and/or Group level.</td>
+          <td>a crisis unit with direct and immediate information. The various people within the departments to be contacted are specified in the procedures. Technical: During both the design and use phases of the assets, the project managers in the operational departments monitor the technical aspects of the projects and any potential changes to them, in conjunction with the operators. The departments concerned are the Infrastructure Department, the Surface Mobility Department, the Rail Department and the Service Offering and Marketing Department. Financial: This monitoring is carried out by the Finance and Public Procurement Department (partly via the GFWG) and the budgetary and administrative management centres located within the operational departments. Furthermore, Île-de-France Mobilités will ensure that the Eligible Green Projects are</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>carried out in line with Île-de-France Mobilités&#x27; extensive environmental and social policies and procedures, which namely include requirements in terms of air pollution, biodiversity preservation, end-of-life asset recycling and respect of labour and human rights, and which are further developed in Section I- Introduction, Section V outlining the alignment of Eligible Green Projects with the Do No Significant Harm &amp; Minimum Safeguards criteria of the EU Taxonomy and the Annexes</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3. Management of Proceeds</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>The net proceeds from Green &amp; Blue Financing Instruments will be deposited in A2A’s general funds account and an amount equal to the net proceeds will be earmarked to Eligible Green &amp; Blue Projects selected by the SFC. A2A’s Treasury will transfer the proceeds directly to the subsidiaries that are in charge of delivering the projects via intercompany loans or equity capital. A2A will endeavour to fully allocate an amount equal to the net proceeds within 4 years. Net proceeds can refinance Eligible Green &amp; Blue Projects disbursed, delivered or acquired up to 3 years before the issuance of the Green Financing Instrument. No look-back period is applied in case of fixed assets allocation. The balance of Proceeds should be periodically adjusted, in order to match allocations to Eligible Green &amp; Blue Projects (re)financed during this period. To this end, if for any reason projects cease to be eligible, are disposed of or</td>
+          <td>An amount equal to the net proceeds of each Green Financing Instrument issued by Île-de-France Mobilités will be earmarked towards Eligible Green Projects as stated in Section II.1 (Use of Proceeds) of this Framework. All relevant information regarding the issuance of the Green Financing Instruments will be monitored and maintained in Île-de-France Mobilités’ internal accounting systems. Where funds cannot be immediately and fully allocated, unallocated proceeds will be held in cash or short-term monetary instruments, in accordance with Île-de-France Mobilités’ public accounting liquidity guidelines. For the avoidance of doubt, unallocated proceeds will not be invested in activities related to nuclear energy, controversial weapons, alcohol, mining and quarrying, defence activities, gambling and betting activities, distilling, rectifying and blending of spirits, palm oil, tobacco or any related controversial activities.</td>
+          <td>ABN AMRO will allocate the net proceeds of issued and outstanding green bonds on a portfolio basis. As long as the instruments are outstanding under this Framework, or previous versions thereof, ABN AMRO will allocate an amount equivalent to the net proceeds of the pool of outstanding green bonds towards Eligible Assets. At the time of issuance the issuance proceeds will be fully allocated to Eligible Assets. The split between allocated proceeds per project category will be provided at the time of issuance. The actual allocations may vary depending on the development of the Eligible Asset portfolio. More information on reporting is provided in section 2.4. On at least an annual basis, we will review the pool of Eligible Assets. If loans or investments no longer meet the eligibility criteria, no longer exist, or if they have been repaid early, ABN AMRO will make an effort to</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>are subject to material ESG controversy, A2A commits to substituting them within 24 months, to the extent possible. A2A commits, to the extent possible, to transparently communicate the estimated share of refinancing prior to each instrument issuance. Pending the allocation or reallocation, as the case may be, of the net proceeds, A2A will invest the balance of the net proceeds, at its own discretion, in cash and/or cash equivalents and/or other liquid marketable instruments which will not include GHG intensive activities as per the company’s financial policy. The payment of principal and interests on any financing instrument issued by A2A under the Framework will be made from its general funds and will not be linked to the performance of any Eligible Green &amp; Blue Project.</td>
+          <td>A system for identifying the Eligible Green Projects allocated to the amount equivalent to the net proceeds will be implemented in Île-de-France Mobilités’ financial management software in order to allow automatic allocation of expenditures according to the eligible asset subcategories of the Framework, with the objective to reach full allocation within two years from the date of issuance, on a best effort basis. The allocation of an amount equal to the net proceeds related to the Green Bonds and Green NEU CP will be made to two different types of expenditures: (i) capital expenditures with respect to Green Bonds and (ii) operating expenditures with respect to Green NEU CP, thereby preventing any possible double allocation between the two instruments.</td>
+          <td>replace these assets with other Eligible Assets. On at least an annual basis, ABN AMRO will provide the ESG Bond Working Group with a proposal for the allocation of an amount equivalent to the proceeds of all the ABN AMRO green bonds issued since 2015 that have not matured towards Eligible Assets. If, after issuance, the available pool of Eligible Assets does not exceed the proceeds of the outstanding green bonds, these funds will be temporarily invested in short-term money market products (as explained below) until sufficient Eligible Assets are available. Unallocated proceeds will be invested in short-term money market products from sovereigns, supranationals, agencies, development banks and financial institutions that are rated ‘Prime’ by Institutional Shareholder Services (ISS) ESG. This ensures that even in situations where there is not a (temporary) full allocation, only investments to industry leaders who</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>meet demanding sustainable performance expectations, manage key ESG risks associated with their business model and capitalise on opportunities offered by transformations towards sustainable development will be selected to ensure alignment with the environmental objectives.</td>
+        </tr>
+        <tr>
+          <td>4. Reporting</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>On an annual basis, at least until full allocation, and thereafter, in case of material changes to the allocation, A2A will provide the following reporting on its Green &amp; Blue Financing Instrument(s): Allocation reporting Detailing i. the financing instrument proceeds allocation by category of Eligible Green &amp; Blue Projects; ii. the proportion of net proceeds used for financing versus refinancing; iii. if feasible, the year of operation of acquired assets; iv. the percentage of EU Taxonomy aligned Eligible Green &amp; Blue Projects financed (incl. the alignment with the SCC, DNSH and MSS); v. if feasible, the co-financing share; vi. the balance of any unallocated proceeds, and, if feasible, the types of temporary investment instruments where unallocated proceeds have been deposited; vii. disclosure of any material</td>
+          <td>Each year, Île-de-France Mobilités will publish an allocation report and an impact report with respect to its Green Financing Instruments outstanding, as detailed below. These reports will be made publicly available on Île-de-France Mobilités&#x27; website (the “Green Financing Report&quot;). The Green Financing Report will include: • the detailed allocation and impact reporting of the Green Financing Instruments issued the previous calendar year and of those issued earlier where some proceeds had not yet been allocated • a summary in appendix of the document of the allocation and impact reporting of all its outstanding Green Financing Instruments, until their maturity. • in case of material change in the allocation or impact calculation of outstanding Green Financing Instruments, the updated allocation and / or impact reporting Due to the</td>
+          <td>Green bonds allocation report On at least an annual basis ABN AMRO will prepare a report to update investors on the allocation of the combined proceeds of issued green bonds towards Eligible Assets (the most recent reports are provided on www.abnamro.com/esgbonds under Use of Proceeds Reports). This report provides information about: ▪ the portfolio of Eligible Assets including a breakdown of exposure per category ▪ the total outstanding amount of green bonds issued ▪ unallocated proceeds ▪ the share of financing vs. refinancing Green bond impact report ABN AMRO intends to report annually on the environmental impact of the portfolio of Eligible Assets to which the proceeds of issued sustainable finance instruments have been allocated. ABN AMRO intends to follow the ICMA guidelines described in the ‘Handbook</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>developments related to the Eligible Green &amp; Blue Projects, including ESG controversies and issues; and viii. the list of eligible projects (re financed, including a brief description and geographical location. The Allocation reports will be available on A2A’s website32. Where applicable, A2A will also use the templates for the Allocation Reports provided under the EU GBS Regulation. Impact/Performance reporting A2A will report on the associated environmental impact of the Green &amp; Blue Financing Instruments with qualitative and / or quantitative information, the latter subject to the availability of suitable data. Impacts, methodologies and assumptions of indicators are disclosed in the annual Sustainability Reporting that is available on A2A’s website and externally verified. Wherever possible, A2A intends to align its reporting with the approach described in the “Handbook – Harmonised Framework for Impact</td>
+          <td>different nature of both the financing instrument itself and the types of Eligible Green Projects, the allocation and impact reporting on the Green NEU CP will be made in a separate section of the report to be included in the same document, and will notably include impact indicators tailored to the Eligible Projects considered for the Green NEU CP (see more information below). Wherever possible, Île-de-France Mobilités will align its reporting with the ICMA recommendations described in the “Handbook – Harmonised Framework for Impact Reporting” (with the latest version published in June 2023) Allocation reporting: information on the portfolio of Eligible Green Projects in the Green Financing Report. The information will include at least the following details: I. I. The total amount of proceeds allocated to the Eligible Green Projects II. Breakdown of allocation by Eligible Green Project sub-category</td>
+          <td>Harmonized Framework for Impact Reporting’ published in June 2022.9 Impact reporting is expected to include per project category the following qualitative and quantitative impact metrics including the methodology and assumptions demonstrating ‘substantial contribution’ and ‘Do No Significant Harm’ to Environmental Objectives of the EU Taxonomy objective Climate Change Mitigation (subject to the availability of relevant data): Green Buildings ▪ An estimated energy saved/avoided of the Eligible Assets compared with a representative average portfolio of residential/commercial buildings or other assets and the GHG emission avoidance in tCO2e ▪ An overview of Eligible Assets and their environmental classification (energy label, etc.) ▪ Share and distribution of projects screened for climate adaptation risks Renewable Energy</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Reporting” (June 2024)33 and the IFC Guidelines for Blue Finance Version 2.0. Where applicable, A2A will also use the templates for the Impact Reports provided under the EU GBS Regulation. Verification External verifiers appointed by A2A will verify on an annual basis and until the full allocation, and thereafter in case of material changes, the allocated proceeds to Eligible Green &amp; Blue Projects and the remaining balance of unallocated proceeds. External verifiers will also verify the compliance of the allocated proceeds with the criteria set out in this Framework for the Eligible Green &amp; Blue Projects. The external verifiers’ reports will be made available on A2A’s website. + TABEL</td>
+          <td>III. Allocation by geographic location IV. Refinancing versus new financing V. The balance of unallocated proceed if any VI. Share of proceeds allocated to projects aligned with the EU Taxonomy VII. Breakdown by types of expenditures VIII. A project-by-project information on amounts disbursed and their expected positive and potential negative environmental impacts Impact reporting: Île-de-France Mobilités will provide reporting on relevant environmental and social impact metrics for Eligible Green Projects, which may include some of the following metrics: + TABEL With respect to the Green NEU CP, Ile-de-France Mobilités intends to report the following indicators: • CO2 emissions per passenger km travelled (gCO2eq /pass.km)</td>
+          <td>▪ Capacity of on-site renewable energy installed in MW ▪ Production of on-site renewable energy in MWh/GWh ▪ Estimated avoidance/reduction of GHG emissions in CO2 equivalent/a ▪ Selected case studies of Eligible Projects may be added to the categories above ABN AMRO commits to disclose the methodology, assumptions and results for the above-mentioned parameters in its green bond impact report. Furthermore, ABN AMRO commits to provide the above reports in line with the template as laid down in Annex II (outstanding report) and Annex III (impact report) of the EU GBS, after becoming applicable and subject to the availability of information. Reporting will take place on ABN AMRO’s website. In case ABN AMRO intends to issue a ‘European green bond’, it will have to complete the European green bond factsheet as laid down in Annex 1 of the approved EU GBS regulation, and will</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>• Volume of socially responsible purchases from inclusion enterprises and sheltered sector enterprises • Share of purchases from SMEs in the Region Ile-de-France • Number of energy meters installed • % of material recovery in dismantling rolling stock • Number of units dismantled Impact reporting methodology is published annually in the impact report and if any change occurs in the methodology, such changes will be clearly stated in the impact report. In case of any material controversies related to Eligible Green Projects, Ile-de-France Mobilités will provide investors with information on key issues at stake and actions put in place by the issuer to address them.</td>
+          <td>have to request a pre-issuance review by an external reviewer. This review will be published on the issuer’s website prior to issuance.</td>
+        </tr>
+        <tr>
+          <td>External reviews (optional)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>1. Second party Opinion Île-de-France Mobilités appointed S&amp;P Global Ratings to deliver the Second Party Opinion. The SPO confirms that this Framework is aligned with the ICMA Green Bond Principles 2021 (with June 2022 Appendix) and fully aligned with the EU Taxonomy, i.e. all eligible categories are aligned with: • the substantial contribution criteria (‘SCC’), • the do no significant harm criteria (‘DNSH’) • and the minimum safeguards (‘MSS’). This Second-Party Opinion document will be made publicly available on Île-de-France Mobilités&#x27; website(6) 2. Post issuance external verification The regularity of expenditure mandated by Île-de-France Mobilités as a Public Administrative Establishment (établissement public à caractère administratif) is controlled by an independent accounting officer, appointed by order of the Minister</td>
+          <td>A SPO is available for this Framework. We intend to appoint one or more external parties to provide a pre-issuance verification in the form of a SPO and a post-issuance verification on the green bonds issued. The pre-issuance verification verifies alignment of the green bonds with one or more of the appropriate standards in the green bonds market (such as the GBP, the EU Taxonomy, EU GBS or any other similar standards, as applicable and as selected by the issuer). The post-issuance verification verifies the relevant allocation report when proceeds from an issuance of green bonds have been allocated in full towards Eligible Assets. Both the pre- and post-issuance verification will become available on ABN AMRO’s website.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Delegate in charge of public accounts. As the public accountant responsible for controlling and paying all Île-de-France Mobilités expenses, they ensure that these expenses are charged and paid in accordance with the accounting standards and public accounting rules laid down by the Ministry of Finance and the Ministry of the Interior. In this way, the accounting officer can certify that the expenses listed in the allocation reports have been paid. In addition, for each annual Green Financing Report published, Île-de-France Mobilités will seek the services of an external auditor to provide a limited assurance report verifying: • The compliance of the assets and expenditures financed or re-financed by the Green Financing Instruments proceeds with the eligibility criteria defined in the use of proceeds section II.1 in this Framework; • The allocated amount related to the Eligible Green Projects financed or re-</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>financed by the Green Financing Instruments proceeds; • The management of proceeds and unallocated proceeds amount; and • The methodology used to compute and disclose the impact metrics, mostly for the carbon emissions avoided (the verification will only occur once and will be considered valid for future reports unless some material changes in the methodology occur). The external auditor’s report will be published on Île-de-France Mobilités’ website(7).</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Linkjes Green Financing Framework:</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>A2A</td>
+          <td>https://content.gruppoa2a.it/sites/default/files/2025-12/a2a-sustainable-finance-framework%E2%80%9312-25.pdf</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Île-de-France Mobilités</td>
+          <td>https://portail-idfm.cdn.prismic.io/portail-idfm/ZoZzah5LeNNTwyWQ_IDFM-FRAMEWORK-2024-NUM-UK.pdf</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ABN AMRO</td>
+          <td>https://assets.ctfassets.net/1u811bvgvthc/6F0nAvZr27GttyD5NQhhxo/6dc7e815d244cd7f7f3af9c122d6878b/240208_ABN_AMRO_Green_Bond_Framewrok_2024_vF.pdf</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
 </body>
 </html>
